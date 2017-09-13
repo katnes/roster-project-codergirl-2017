@@ -1,0 +1,16 @@
+.firstbox {
+  border: 2px solid #eeeeee;
+  display: flex;
+  margin: 5px;
+}
+
+.resize img{
+  height: 200px;
+  width: 300px;
+  border-radius: 50%
+}
+
+h2 {
+  text-align: left;
+  padding: 30px;
+}
