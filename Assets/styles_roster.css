@@ -1,16 +1,83 @@
-.firstbox {
-  border: 2px solid #eeeeee;
+/*Max width for site*/
+.content {
   display: flex;
-  margin: 5px;
-}
+  justify-content: center;
+  flex-wrap: wrap;}
+/*end*/
 
-.resize img{
+.img-circle {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  padding: 10px;}
+
+.floating-box {
+  display: inline-flex;
+  align-items: center;
   height: 200px;
-  width: 300px;
-  border-radius: 50%
+  border: 2px solid #eeeeee;
+  margin: auto;}
+
+  .vertical-line{
+    border-left: 1px solid black;
+  }
+
+h1{
+    text-align: left;
+    font-size: 200%;
 }
 
 h2 {
+    text-align: right;
+    font-family:'PT Sans Narrow', 'arial';}
+
+  h3 {
+  text-align: center;
+  font-family:'PT Sans Narrow', 'arial';}
+
+nav {
+  font-family: 'PT Sans Narrow', 'arial';
+  font-size: 1em;
+  color: black;
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: space-between;
+  align-items: center;}
+
+article {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;}
+
+.student-block {
+  align-items: center;
+  border: 2px solid #eeeeee;}
+
+.alignleft {
+  text-align: right;
+  float: left;
+  padding: 10px;}
+
+.alignright {
   text-align: left;
-  padding: 30px;
+  float: right;
+  padding: 10px;}
+
+  /*Courses section begins here*/
+
+.alignment {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
+
+.box {
+  max-width: 500px;
+  border: 2px solid #eeeeee;
+  padding: 10px;
+  display: flex;
+  justify-content:space-around;}
