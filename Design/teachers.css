@@ -1,0 +1,65 @@
+/*Max width for site*/
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;}
+
+/*end*/
+
+nav {
+  font-family: 'PT Sans Narrow', 'arial';
+  font-size: 1em;
+  color: black;
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: space-between;
+  align-items: center;}
+
+  .img-circle {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    padding: 10px;}
+
+.teacherbox{
+border: solid #eeeeee;
+width: 500px;
+margin: 10px;
+
+}
+
+.imagebox{
+display: inline-flex;
+flex-direction: row;
+border: 2px solid #eeeeee;
+width: 500px;
+align-items: center;
+}
+
+.topbox{
+  border: 2px solid #eeeeee;
+
+}
+
+.bottombox{
+  display: inline-flex;
+  flex-direction: row;
+  border: solid #eeeeee;
+  width: 500px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+.textbox{
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  margin: auto;
+
+}

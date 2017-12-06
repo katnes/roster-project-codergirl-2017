@@ -71,13 +71,30 @@ article {
 
 .alignment {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: row;
 }
 
 .box {
   max-width: 500px;
   border: 2px solid #eeeeee;
+  margin: 10px;
   padding: 10px;
-  display: flex;
-  justify-content:space-around;}
+  text-align: justify;}
+
+
+
+  /*NEWCOURSE CSS*/
+
+  .classes {
+    display: flex;
+    margin: 20px 0;
+  }
+
+  .classinfo {
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+  }
