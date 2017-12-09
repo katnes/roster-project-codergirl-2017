@@ -1,0 +1,47 @@
+/*Max width for site*/
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/*end*/
+
+nav {
+  font-family: 'PT Sans Narrow', 'arial';
+  font-size: 1em;
+  color: black;
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vertical-line{
+  border-left: 1px solid black;
+  padding-left: 50px;
+  }
+
+.box {
+  max-width: 500px;
+  border: 2px solid #eeeeee;
+  margin: 10px;
+  padding: 10px;
+  text-align: justify;
+  flex-direction: row;
+}
+
+.test1 {
+  display: flex;
+  padding: 10px;
+  padding-left: 20px;
+  border: 2px solid #eeeeee;
+  max-width: 500px;
+  margin-left: 30px;
+  margin: 20px;
+}
+
+.test2 {
+  padding-left: 20px;
+  padding-right: 40px;
+}
