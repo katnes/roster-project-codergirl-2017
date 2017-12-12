@@ -1,13 +1,11 @@
 
 
 console.log("This file is linked!");
-/* File Link test */
+// File Link test
 alert("Welcome to the FFXV Teacher Page!")
-/* JS Testing */
+// JS Testing
 
-
-/*Ignis*/
-
+//Ignis
 
 var teacherName = "Ignis Scientia";
 var department = "Culinary Arts";
@@ -17,18 +15,23 @@ console.log("Teacher: " + teacherName);
 console.log("Department: " +  department);
 console.log("Ratings: " + rating);
 
-function aveRating (rating) {
 
-  var result = rating / 3; /*divide ratings by 3 to find the average*/
-  var avg = (result *100) /100; /*round the result */
+    getRatingAvg = function rating (){
+        var foo = 0;
+        for(var foo = 0; foo < rating.length; i++){
+         foo += rating[foo];
+         console.log(getRatingAvg);
 
-   return ave;
-}
-
-console.log("Average Rating:" + avgRating());
+     }
+   }
 
 
-/*Glady*/
+console.log("Average Rating: " + getRatingAvg);
+
+
+     // divide ratings by 3 to find the average
+
+//Glady
 
 var teacherName = "Gladiolus Amicitia";
 var department = "Physical Education";
