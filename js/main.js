@@ -12,38 +12,49 @@ var department = "Culinary Arts";
 var rating = [5.0, 5.0, 4.9];
 
 console.log("Teacher: " + teacherName);
-console.log("Department: " +  department);
+console.log("Department: " + department);
 console.log("Ratings: " + rating);
 
 
-var getRatingAvg = function(){
-        var sum = 0;
-        for(var i = 0; i < rating.length; i++){
-         sum += rating[i];
+var getRatingAvg = function() {
+  var sum = 0;
+  for (var i = 0; i < rating.length; i++) {
+   // will add them all together
+    sum += rating[i];
 
-       }
-     return sum;
-   }
+ }
+  // need to divide
+
+ return sum / rating.length;
+}
+
+var addTeacherRating = function(ratingToAddToArray) {
+  var newRatingInt = parseInt(ratingToAddToArray, 10);
+  // because we return rating.push(newRatingInt);
+  // you can think of this as doing
+  // var foo = rating.push(newRatingInt);
+  // return foo;
+  return rating.push(newRatingInt);
+}
+
+//well written code- the function tranforms the prompt into an intr before the input is entered
 
 console.log("Average Rating:" + getRatingAvg());
 
-
-function addTeacherRating (rating, newRating) {
-  rating.push(newRating);
-  return rating;
-}
-
 var newRating = prompt("We would like for you to review our teacher. Please enter a rating between 0.0 and 5.0?");
-  if (newRating >=0 && <=5 ) {
-    addTeacherRating;
-    alert("Thanks for your review! " + teacherName + "'s average rating is now " + (getRatingAvg()) + ".");
+if (newRating >= 0 && newRating <= 5) {
+    // add newRating to the rating array
+
+  addTeacherRating(newRating);
+
+  // alert the user of the new average
+  alert("Thanks for your review! " + teacherName + "'s average rating is now " + (getRatingAvg()) + ".");
   } else {
     prompt("We would like for you to review our teacher. Please enter a rating between 0.0 and 5.0?");
   }
 
+//parseInt changes a string to an integer
 
-
-     // divide ratings by 3 to find the average
 
 //Glady
 /*
